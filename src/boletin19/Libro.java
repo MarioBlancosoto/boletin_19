@@ -2,7 +2,7 @@
 package boletin19;
 
 
-public class Libro  implements Comparable<Libro>{
+public class Libro  implements Comparable <Libro>{
     String titulo,autor,isbn;
     float prezo;
     int numUnidades;
@@ -68,8 +68,10 @@ public class Libro  implements Comparable<Libro>{
     
     @Override
     public int compareTo(Libro comparar){
-    String comparaTitulo = comparar.getTitulo();
-    return 0;
+      return  this.titulo.compareToIgnoreCase(comparar.getTitulo());
+        
+    }
+    
 }    
     
-}
+

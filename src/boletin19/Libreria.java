@@ -46,6 +46,7 @@ public class Libreria {
         }
     }
          public void amosarLibros(){
+            
         Collections.sort(biblioteca);
     
      for(Libro  lib: biblioteca) 
@@ -59,7 +60,8 @@ public class Libreria {
                  biblioteca.get(i).setNumUnidades(biblioteca.get(i).getNumUnidades()-1);
              }
        
-         }
+        }       
+   
          
     }   
     
