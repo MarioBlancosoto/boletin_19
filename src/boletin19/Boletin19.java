@@ -20,7 +20,7 @@ public class Boletin19 {
                
            case 1: lib.engadeLibros();
            break;
-           case 2: lib.venderLibros();
+           case 2: lib.vender();
            break;
            case 3: lib.consultarLibro();
            break;
@@ -29,11 +29,8 @@ public class Boletin19 {
            case 5: lib.amosarLibros();
            break;
            case 6: System.exit(select);
-               
-          
            
-               
-               
+                       
                
            }
            

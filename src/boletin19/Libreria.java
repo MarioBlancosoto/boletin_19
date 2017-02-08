@@ -20,12 +20,6 @@ public class Libreria {
         biblioteca.add(new Libro(dato.pedirTitulo(),dato.pedirAutor(),dato.pedirIsbn()
            ,dato.pedirPrezo(),dato.pedirUnidades()));
     }
-    
-    public void venderLibros(){
-        
-        biblioteca.remove( new Libro(dato.pedirTitulo(),dato.pedirAutor(),dato.pedirIsbn()
-           ,dato.pedirPrezo(),dato.pedirUnidades()));
-    }
    
     
     public void darDeBaixa(){
@@ -57,6 +51,16 @@ public class Libreria {
      for(Libro  lib: biblioteca) 
             System.out.println(lib);
     }
+         
+        public void vender(){
+         String vender = JOptionPane.showInputDialog("Introduza o titulo do libro a vender");
+             for(int i=0;i<biblioteca.size();i++){
+                 if(biblioteca.get(i).getTitulo().equals(vender))
+                 biblioteca.get(i).setNumUnidades(biblioteca.get(i).getNumUnidades()-1);
+             }
+       
+         }
+         
     }   
     
     
