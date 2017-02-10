@@ -1,6 +1,8 @@
 
 package boletin19;
 
+import javax.swing.JOptionPane;
+
 
 public class Libro  implements Comparable <Libro>{
     String titulo,autor,isbn;
@@ -68,8 +70,19 @@ public class Libro  implements Comparable <Libro>{
     
     @Override
     public int compareTo(Libro comparar){
-      return  this.titulo.compareToIgnoreCase(comparar.getTitulo());
         
+  int select = Integer.parseInt(JOptionPane.showInputDialog("Elija el parámetro por el que quiere ordenar "
+    + "\n 1. por Titulo \n 2. por ISBN"));
+  
+  int  comp=select;
+  switch(select){
+      case 1:  comp = this.titulo.compareToIgnoreCase(comparar.getTitulo());
+        break;
+      case 2: comp = this.isbn.compareToIgnoreCase(comparar.getIsbn());
+        break;
+  }  
+    
+  return comp;
     }
     
 }    

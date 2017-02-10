@@ -54,14 +54,15 @@ public class Libreria {
     }
          
         public void vender(){
+         int unidades = Integer.parseInt(JOptionPane.showInputDialog("Indica a cantidade a vender"));
          String vender = JOptionPane.showInputDialog("Introduza o titulo do libro a vender");
              for(int i=0;i<biblioteca.size();i++){
                  if(biblioteca.get(i).getTitulo().equals(vender))
-                 biblioteca.get(i).setNumUnidades(biblioteca.get(i).getNumUnidades()-1);
+                 biblioteca.get(i).setNumUnidades(biblioteca.get(i).getNumUnidades()-unidades);
              }
        
         }       
-   
+ 
          
     }   
     

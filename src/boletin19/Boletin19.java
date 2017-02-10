@@ -13,7 +13,7 @@ public class Boletin19 {
       
        do{
              select = Integer.parseInt(JOptionPane.showInputDialog("selecciona una opción "
-       + "\n  1.Engadir libro \n 2.Vender Libro \n 3.Atopar Libro \n 4.Dar de baixa libro \n 5.Ordear por Nomes"
+       + "\n  1.Engadir libro \n 2.Vender Libro \n 3.Atopar Libro \n 4.Dar de baixa libro \n 5.Ordear por Titulo/ISBN"
         + "\n 6.Sair"));
            
            switch(select){
@@ -26,7 +26,7 @@ public class Boletin19 {
            break;
            case 4: lib.darDeBaixa();
            break;
-           case 5: lib.amosarLibros();
+           case 5: lib.amosarLibros();     
            break;
            case 6: System.exit(select);
            
