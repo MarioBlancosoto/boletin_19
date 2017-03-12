@@ -6,6 +6,7 @@ import milibreria.Milibreria;
 public class Boletin19 {
 
   int alejandroMariquita;
+  //joer
     public static void main(String[] args) {
        Milibreria dato = new Milibreria();
        Libreria lib = new Libreria();
